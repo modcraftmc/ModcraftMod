@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "fr.modcraftmc.modcraftmod.common.mixins",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "modcraftmod.refmap.json",
+  "server": [
+    "MixinModContainer",
+    "MixinLoginMessage",
+    "MixinLogoutMessage"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}
