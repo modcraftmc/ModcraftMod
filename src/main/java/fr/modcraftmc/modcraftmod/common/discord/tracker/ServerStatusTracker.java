@@ -34,12 +34,11 @@ public class ServerStatusTracker {
         builder.append("**status du chargement des mods**");
 
         for (InternalState state : InternalState.values()) {
-
             builder.append("\n");
             if (currentState == state || pastState.contains(state)) {
-                builder.append(START_EMOTE + " " + state.name());
+                builder.append(START_EMOTE).append(" ").append(state.name());
             } else {
-                builder.append(LOADING_EMOTE + " " + state.name());
+                builder.append(LOADING_EMOTE).append(" ").append(state.name());
             }
         }
 
